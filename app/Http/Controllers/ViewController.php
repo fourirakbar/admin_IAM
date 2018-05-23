@@ -35,7 +35,12 @@ class ViewController extends Controller
 	}
 
 	public function log($value) {
-		dd($value);
-		return view('log');	
+		
+		$explode = explode("_", $value);
+		$user = $explode[1];
+		$port = $explode[2];
+		$ip = $explode[0];
+
+		return view('log', compact('value', 'user', 'port', 'ip'));
 	}
 }

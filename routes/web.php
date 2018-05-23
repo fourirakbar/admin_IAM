@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route::get('/dashboard', function() {
+//     return view('dashboard');
+// });
+
+Route::get('/dashboard', 'ViewController@index');
+Route::get('/log/{value}', 'ViewController@log');
+// Route::post('/store', 'Nutrition\Recipe\CreateController@store');

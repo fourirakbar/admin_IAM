@@ -24,13 +24,13 @@
  			<li class="nav-item ">
  				<a class="nav-link" href="./dashboard.html">
  					<i class="fa fa-home"></i>
- 					<p>Dashboard</p>
+ 					<p>User Hari Ini</p>
  				</a>
  			</li>
  			<li class="nav-item ">
  				<a class="nav-link" href="./dashboard.html">
  					<i class="fa fa-envelope"></i>
- 					<p>Pesan</p>
+ 					<p>Rekap User</p>
  				</a>
  			</li>
 

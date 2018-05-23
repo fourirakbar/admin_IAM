@@ -34,19 +34,17 @@ DPTSI - ITS
                   </tr>
                 </thead>
                 <?php
-                $i=0;
                 $index = 1;
                 ?>
                 <tbody>
-                 @foreach ($scanned_directory as $key => $value)
+                 @foreach ($data as $key => $value)
 	                 <tr>
-	                 	{{-- {{dd($value)}} --}}
 	                   <td>{{ $index++ }}</td>
-	                   <td>{{ $array_user[$i] }}</td>
-	                   <td>{{ $array_port[$i] }}</td>
-	                   <td>{{ $array_ip[$i] }}</td>
+	                   <td>{{ $value->nrp }}</td>
+	                   <td>{{ $value->port }}</td>
+	                   <td>{{ $value->ip }}</td>
 	                   <td>
-	                    <a href="{{URL::to('/log/'.$value)}}" rel="tooltip" title="" class="btn btn-info btn-link btn-xs" data-original-title="Lihat Detail Log">
+	                    <a href="{{URL::to('/log/'.$array_gabung[$key])}}" rel="tooltip" title="" class="btn btn-info btn-link btn-xs" data-original-title="Lihat Detail Log">
 	                      <i class="fa fa-search"></i>
 	                    </a>                        
 	                  </td>

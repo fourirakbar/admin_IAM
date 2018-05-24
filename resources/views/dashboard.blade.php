@@ -47,9 +47,9 @@ DPTSI - ITS
 	                    {{-- <a href="{{URL::to('/log/'.$array_gabung[$key])}}" rel="tooltip" title="" class="btn btn-info btn-link btn-xs" data-original-title="Lihat Detail Log">
 	                      <i class="fa fa-search"></i>
 	                    </a> --}}
-	                    <a href="{{URL::to('/log/'.$array_gabung[$key])}}" type="submit" class="btn btn-fill btn-primary">Stream Log</a>
-	                    <a href="{{URL::to('/lihatlog/'.$array_gabung[$key])}}" type="submit" class="btn btn-fill btn-primary">Lihat Log</a>
-	                    <a href="{{URL::to('/downloadlog/'.$array_gabung[$key])}}" type="submit" class="btn btn-fill btn-primary">Download Log</a>
+	                    <a href="{{URL::to('/log/'.$array_gabung[$key])}}" type="submit" class="btn btn-fill btn-default"><strong>Stream Log</strong></a>
+	                    <a href="{{URL::to('/lihatlog/'.$array_gabung[$key])}}" type="submit" class="btn btn-fill btn-info"><strong>Lihat Log</strong></a>
+	                    <a href="{{URL::to('/downloadlog/'.$array_gabung[$key])}}" type="submit" class="btn btn-fill btn-primary"><strong>Download Log</strong></a>
 	                    
 	                  </td>
 	                </tr>

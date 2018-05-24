@@ -21,4 +21,6 @@ Route::get('/', function () {
 
 Route::get('/dashboard', 'ViewController@index');
 Route::get('/log/{value}', 'ViewController@log');
+Route::get('/lihatlog/{value}', 'ViewController@lihatlog');
+Route::get('/downloadlog/{value}', 'ViewController@downloadlog');
 // Route::post('/store', 'Nutrition\Recipe\CreateController@store');

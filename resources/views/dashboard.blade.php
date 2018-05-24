@@ -44,9 +44,13 @@ DPTSI - ITS
 	                   <td>{{ $value->port }}</td>
 	                   <td>{{ $value->ip }}</td>
 	                   <td>
-	                    <a href="{{URL::to('/log/'.$array_gabung[$key])}}" rel="tooltip" title="" class="btn btn-info btn-link btn-xs" data-original-title="Lihat Detail Log">
+	                    {{-- <a href="{{URL::to('/log/'.$array_gabung[$key])}}" rel="tooltip" title="" class="btn btn-info btn-link btn-xs" data-original-title="Lihat Detail Log">
 	                      <i class="fa fa-search"></i>
-	                    </a>                        
+	                    </a> --}}
+	                    <a href="{{URL::to('/log/'.$array_gabung[$key])}}" type="submit" class="btn btn-fill btn-primary">Stream Log</a>
+	                    <a href="{{URL::to('/lihatlog/'.$array_gabung[$key])}}" type="submit" class="btn btn-fill btn-primary">Lihat Log</a>
+	                    <a href="{{URL::to('/downloadlog/'.$array_gabung[$key])}}" type="submit" class="btn btn-fill btn-primary">Download Log</a>
+	                    
 	                  </td>
 	                </tr>
 	                @endforeach
